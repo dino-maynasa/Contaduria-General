@@ -303,3 +303,6 @@
     overflow-y: auto;   /* scroll interno */
     padding: 10px;
 }
+.lead{
+    color:#FFD700;
+}
