@@ -75,3 +75,17 @@ $(document).ready(function() {
     }
 
 });
+const text = "Formamos profesionales capaces de gestionar la información financiera de las organizaciones con ética y responsabilidad";
+const p = document.getElementById("text");
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        p.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 60); // velocidad en ms (50 ms = 0.05s por letra)
+    }
+}
+
+// Inicia el efecto
+typeWriter();
